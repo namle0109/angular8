@@ -5,7 +5,6 @@ RUN apk --no-cache --virtual build-dependencies add \
     make \
     g++ \
     gifsicle \
-    ttf-freefont \
     optipng \
     cairo-dev \
     jpeg-dev \
