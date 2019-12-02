@@ -26,22 +26,6 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['ChromeHeadless'],
-    customLaunchers: {
-      ChromiumNoSandbox: {
-        base: 'ChromiumHeadless',
-        flags: [
-          '--disable-setuid-sandbox',
-          '--no-sandbox',
-          '--user-data-dir=/tmp/chrome-test-profile',
-          '--disable-web-security',
-          '--no-proxy-server',
-          '--headless',
-          '--disable-gpu',
-          '--disable-translate',
-          '--disable-extensions'
-        ]
-      }
-    },
     singleRun: true,
     restartOnFileChange: true
   });
