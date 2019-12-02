@@ -30,13 +30,6 @@ pipeline {
                     steps {
                         sh 'npm run test'
                     }
-                    post {
-                        always {
-                            script {
-                                junit 'test-results.xml'
-                            }
-                        }
-                    }
                 }
             }
         }
